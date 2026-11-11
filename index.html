@@ -1,0 +1,271 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Decor and Events | Making Moments Beautiful</title>
+<meta name="description" content="Happy Decor and Events brings your special celebrations to life with beautiful, elegant event decoration.">
+<style>
+:root {
+  --wine: #701b35;
+  --deep: #481021;
+  --gold: #d5ad76;
+  --cream: #fffaf5;
+  --text: #30242a;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: Arial, sans-serif;
+  color: var(--text);
+  background: var(--cream);
+  line-height: 1.6;
+}
+header {
+  background: white;
+  padding: 18px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 2px 15px #00000010;
+}
+.logo { color: var(--wine); font-size: 21px; font-weight: bold; }
+.logo span { display: block; color: #9b806e; font-size: 10px; letter-spacing: 4px; }
+nav a {
+  text-decoration: none;
+  color: var(--text);
+  margin-left: 20px;
+  font-size: 14px;
+}
+nav a:hover { color: var(--wine); }
+.hero {
+  min-height: 580px;
+  display: flex;
+  align-items: center;
+  padding: 80px 8%;
+  color: white;
+  background: linear-gradient(90deg, #310d1ddd, #310d1d55),
+  url('https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=1800') center/cover;
+}
+.hero-content { max-width: 620px; }
+.eyebrow {
+  color: var(--gold);
+  letter-spacing: 4px;
+  font-size: 12px;
+  font-weight: bold;
+}
+h1 { font-family: Georgia, serif; font-size: clamp(42px, 7vw, 72px); line-height: 1.1; margin: 20px 0; }
+.hero p { font-size: 17px; max-width: 480px; color: #f8eaf0; }
+.btn {
+  display: inline-block;
+  background: var(--wine);
+  color: white;
+  text-decoration: none;
+  padding: 14px 27px;
+  border-radius: 4px;
+  margin-top: 25px;
+  font-weight: bold;
+}
+.btn:hover { background: var(--deep); }
+.btn-light { background: white; color: var(--wine); }
+section { padding: 75px 8%; }
+.section-heading { text-align: center; margin-bottom: 40px; }
+.section-heading small { color: var(--wine); letter-spacing: 3px; font-weight: bold; }
+h2 { font-family: Georgia, serif; font-size: 38px; color: var(--deep); margin-top: 10px; }
+.section-heading p { color: #76666c; margin-top: 10px; }
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 45px;
+  align-items: center;
+}
+.about img { width: 100%; border-radius: 8px; }
+.about p { margin-top: 18px; color: #6e5c62; }
+.services { background: #f5eae9; }
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px #0000000c;
+}
+.card img { width: 100%; height: 220px; object-fit: cover; }
+.card-content { padding: 22px; }
+.card h3 { color: var(--wine); font-family: Georgia, serif; font-size: 22px; }
+.card p { color: #76666c; margin-top: 8px; font-size: 14px; }
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+.gallery-grid img {
+  width: 100%; height: 240px; object-fit: cover;
+  border-radius: 6px;
+}
+.callout {
+  text-align: center;
+  background: linear-gradient(120deg, var(--deep), var(--wine));
+  color: white;
+}
+.callout h2 { color: white; }
+.callout p { margin-top: 12px; color: #f5dfe7; }
+.contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 35px;
+}
+.contact p { margin-top: 14px; color: #76666c; }
+.contact-box {
+  background: white;
+  padding: 28px;
+  border-radius: 8px;
+  box-shadow: 0 5px 20px #0000000c;
+}
+footer {
+  background: #2d111d;
+  color: #f5eaf0;
+  text-align: center;
+  padding: 28px 15px;
+  font-size: 13px;
+}
+footer span { color: var(--gold); }
+@media(max-width:750px) {
+  header { flex-direction: column; gap: 12px; }
+  nav { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
+  nav a { margin: 0; font-size: 12px; }
+  .hero { min-height: 500px; padding: 60px 7%; }
+  .about, .contact { grid-template-columns: 1fr; }
+  .cards { grid-template-columns: 1fr; }
+  .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+  .gallery-grid img { height: 160px; }
+  section { padding: 55px 7%; }
+  h2 { font-size: 32px; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="logo">HAPPY DECOR <span>AND EVENTS</span></div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-content">
+    <div class="eyebrow">WELCOME TO HAPPY DECOR AND EVENTS</div>
+    <h1>Making Your Special Moments Beautiful</h1>
+    <p>Elegant decorations, unforgettable celebrations, and beautiful details that turn your dreams into memories.</p>
+    <a class="btn btn-light" href="#contact">Plan Your Event</a>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=900" alt="Elegant event decoration">
+  <div>
+    <div class="eyebrow">OUR STORY</div>
+    <h2>Every Celebration Deserves Something Special</h2>
+    <p>At Happy Decor and Events, we believe every special moment deserves a beautiful setting. We bring creativity, care, and attention to detail to celebrations big and small.</p>
+    <p>From intimate gatherings to unforgettable celebrations, let's make your occasion truly memorable.</p>
+    <a class="btn" href="#services">Explore Our Services</a>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="section-heading">
+    <small>WHAT WE DO</small>
+    <h2>Our Services</h2>
+    <p>Beautiful settings for life's most meaningful moments.</p>
+  </div>
+  <div class="cards">
+    <article class="card">
+      <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=800" alt="Wedding decoration">
+      <div class="card-content">
+        <h3>Wedding Decoration</h3>
+        <p>Create the romantic and elegant atmosphere you've always imagined.</p>
+      </div>
+    </article>
+    <article class="card">
+      <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=800" alt="Birthday celebration">
+      <div class="card-content">
+        <h3>Birthday Celebrations</h3>
+        <p>Colorful, joyful decorations that make every birthday unforgettable.</p>
+      </div>
+    </article>
+    <article class="card">
+      <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800" alt="Special event">
+      <div class="card-content">
+        <h3>Special Events</h3>
+        <p>Thoughtful decoration for gatherings, parties, and memorable occasions.</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section id="gallery">
+  <div class="section-heading">
+    <small>OUR INSPIRATION</small>
+    <h2>Beautiful Moments</h2>
+    <p>A glimpse of the celebrations we love.</p>
+  </div>
+  <div class="gallery-grid">
+    <img src="https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=700" alt="Event table decoration">
+    <img src="https://images.unsplash.com/photo-1507504031003-b417219a0fde?w=700" alt="Wedding flowers">
+    <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=700" alt="Wedding setting">
+    <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=700" alt="Elegant event">
+    <img src="https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=700" alt="Birthday party">
+    <img src="https://images.unsplash.com/photo-1465495976277-4387d4b0e4a6?w=700" alt="Wedding celebration">
+  </div>
+</section>
+
+<section class="callout">
+  <small>LET'S CELEBRATE</small>
+  <h2>Your Dream Event Starts Here</h2>
+  <p>Tell us what you're celebrating. We'd love to help make it special.</p>
+  <a class="btn btn-light" href="#contact">Get in Touch</a>
+</section>
+
+<section id="contact">
+  <div class="section-heading">
+    <small>CONTACT US</small>
+    <h2>Let's Plan Something Beautiful</h2>
+    <p>We're excited to hear about your next celebration.</p>
+  </div>
+  <div class="contact">
+    <div>
+      <h3>Happy Decor and Events</h3>
+      <p>Have an event in mind? Contact us to discuss your ideas, plans, and decoration needs.</p>
+      <p><strong>WhatsApp:</strong> Add your business number</p>
+      <p><strong>Location:</strong> Add your business location</p>
+      <p><strong>Email:</strong> Add your business email</p>
+    </div>
+    <div class="contact-box">
+      <h3>Ready to make memories?</h3>
+      <p>Contact our team to discuss your event and request a booking.</p>
+      <a class="btn" href="https://wa.me/" target="_blank">Contact Us on WhatsApp</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <p>© 2026 <span>Happy Decor and Events</span>. All rights reserved.</p>
+  <p>Making Your Special Moments Beautiful.</p>
+</footer>
+
+</body>
+</html>
